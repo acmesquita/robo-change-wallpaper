@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/acmesquita/robo-change-wallpaper/issues"
   },
-  "homepage": "https://github.com/acmesquita/robo-change-wallpaper#readme"
+  "homepage": "https://github.com/acmesquita/robo-change-wallpaper#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
