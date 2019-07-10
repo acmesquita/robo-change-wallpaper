@@ -1,0 +1,19 @@
+{
+  "name": "robo-change-wallpaper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acmesquita/robo-change-wallpaper.git"
+  },
+  "author": "Catharina Mesquita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acmesquita/robo-change-wallpaper/issues"
+  },
+  "homepage": "https://github.com/acmesquita/robo-change-wallpaper#readme"
+}
