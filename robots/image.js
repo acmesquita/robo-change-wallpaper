@@ -22,22 +22,27 @@ async function robot(){
     }
     
     async function fetchGoogleAndReturnImagesLinks(query){
-        const response = await customSearch.cse.list({
-            key: googleSearchCredentials.apiKey,
-            cx: googleSearchCredentials.searchEngineId,
-            q: query,
-            searchType: 'image',
-            imgSize: 'xlarge',
-            num: 2
-        })
+        try{
 
-        const imagesUrl = response.data.items.map((item) => {
-            return item.link
-        })
-
-        return imagesUrl;
+            const response = await customSearch.cse.list({
+                key: googleSearchCredentials.apiKey,
+                cx: googleSearchCredentials.searchEngineId,
+                q: query,
+                searchType: 'image',
+                // imgSize: 'xlarge',
+                num: 2
+            })
+            
+            const imagesUrl = response.data.items.map((item) => {
+                return item.link
+            })
+            
+            return imagesUrl;
+        }catch(err){
+            return []
+        }
     }
-
+        
     async function downloadAllImages(content){
         content.downloadedImages = []
 
