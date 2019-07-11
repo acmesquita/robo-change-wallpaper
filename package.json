@@ -18,7 +18,9 @@
   "homepage": "https://github.com/acmesquita/robo-change-wallpaper#readme",
   "dependencies": {
     "algorithmia": "^0.3.10",
+    "ibm-watson": "^4.2.1",
     "readline-sync": "^1.4.9",
-    "sbd": "^1.0.15"
+    "sbd": "^1.0.15",
+    "watson-developer-cloud": "^4.0.1"
   }
 }
