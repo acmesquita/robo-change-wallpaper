@@ -18,6 +18,7 @@
   "homepage": "https://github.com/acmesquita/robo-change-wallpaper#readme",
   "dependencies": {
     "algorithmia": "^0.3.10",
+    "child_process": "^1.0.2",
     "googleapis": "^40.0.1",
     "ibm-watson": "^4.2.1",
     "image-downloader": "^3.4.2",
