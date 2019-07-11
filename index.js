@@ -1,4 +1,3 @@
-const readline = require('readline-sync')
 const robots = {
     input: require('./robots/input'),
     text: require('./robots/text'),
@@ -13,9 +12,6 @@ async function start(){
     await robots.text()
     await robots.image()
     robots.wallpaper()
-
-    const content = robots.state.load()
-    // console.dir(content, { depth: null })
 }
 
 start()
