@@ -1,21 +1,17 @@
 const readline = require('readline-sync')
 const robots = {
-    text: require('./robots/text')
+    input: require('./robots/input'),
+    text: require('./robots/text'),
+    state: require('./robots/state')
 }
 
 async function start(){
-    const content = {
-        maximumSentences: 7
-    }
+    
+    robots.input()
+    await robots.text()
 
-    content.searchTerm = askAndReturnSearchTerm()
-    await robots.text(content)
-
-    function askAndReturnSearchTerm(){
-        return readline.question('Type a term to theme: ')
-    }
-
-    console.log(JSON.stringify(content.sentences, null, 2))
+    const content = robots.state.load()
+    console.dir(content, { depth: null })
 }
 
 start()
